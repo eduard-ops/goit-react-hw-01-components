@@ -1,5 +1,3 @@
-import Container from 'components/container/Container';
-
 import Profile from 'components/social-profile/Profile';
 
 import Statistics from 'components/statistics/Statistics-list';
@@ -18,7 +16,7 @@ import transactions from './data/transactions.json';
 
 function App() {
   return (
-    <Container>
+    <div>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -29,7 +27,7 @@ function App() {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </Container>
+    </div>
   );
 }
 
