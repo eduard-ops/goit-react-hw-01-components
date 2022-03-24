@@ -1,0 +1,42 @@
+.wrapper {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgb(212 20 67 / 10%);
+  background-color: aliceblue;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.name {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  background: silver;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  padding-top: 2px;
+  margin-left: 10px;
+}
+
+.avatar {
+  width: 50px;
+  margin-left: 10px;
+}
